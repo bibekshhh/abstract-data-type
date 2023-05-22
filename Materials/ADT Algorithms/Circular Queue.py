@@ -14,7 +14,7 @@ def enQueue(item):
             endPointer = 0
         queueLength += 1
         queue[endPointer] = item
-    if endPointer == 0:
+    elif endPointer == 0:
         print('Queue is full, cannot enqueue')
         
 def deQueue():
@@ -38,16 +38,21 @@ enQueue(1)
 enQueue(1)
 enQueue(1)
 enQueue(1)
-enQueue(1)
+print("")
+print("Array after Enqueue")
 print(queue)
 
 deQueue()
 deQueue()
 deQueue()
 deQueue()
+print("")
+print("Array after Dequeue")
 print(queue)
 
 enQueue(1)
 enQueue(1)
+print("")
+print("Array after Enqueue again")
 print(queue)
         

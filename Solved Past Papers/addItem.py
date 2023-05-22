@@ -1,7 +1,6 @@
 arr = [1, 2, 4, 5, 6, -1]
 
 # def addNode(arr, data):
-
 def findInsertionPoint(arr, data):
     for i in range(len(arr)):
         if  arr[i] > data:
