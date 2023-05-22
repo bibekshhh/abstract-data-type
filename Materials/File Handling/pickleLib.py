@@ -10,8 +10,11 @@ class Student:
 
 studentRecord = Student()
 
+# add record to the studentRecord object instance of the Class
+
 studentRecord.name = str(input("Enter student's full name: "))
 studentRecord.regNo = int(input("Enter registration number: "))
+
 year = int(input("Enter year of birth: "))
 month = int(input("Enter month of birth: "))
 day = int(input("Enter day of birth: "))
