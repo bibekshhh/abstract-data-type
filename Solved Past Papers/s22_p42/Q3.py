@@ -15,7 +15,7 @@ class Card:
 
 
 # main
-cardArray = [Card() for i in range(30)]
+cardArray = [Card(-1, None) for i in range(30)]
 
 try:
     filename = "CardValues.txt"
