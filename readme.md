@@ -1,5 +1,5 @@
 ## Abstract Data Types
-Make PR request to add up more algorithms, or open issues for any change on the codes, under Abstract Data Type based on A Levels Computer Science (9618) syllabus.
+Create a PR request to add on more algorithms, or open issues for any changes on the code, under Abstract Data Type Course Content of A Levels Computer Science (9618) syllabus.
 
 Run the code with:
 ```
