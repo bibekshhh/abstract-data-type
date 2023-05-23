@@ -66,7 +66,7 @@ def Display():
     global TreeList, RootPointer, FreePointer
 
     for i in range(size):
-        print(f"Index: {i} || Left Ptr: {TreeList[i].LeftPointer} || Data: {TreeList[i].Data} || Right Ptr: {TreeList[i].RightPointer}")
+        print(f"Index: {i} | Left Ptr: {TreeList[i].LeftPointer} | Data: {TreeList[i].Data} | Right Ptr: {TreeList[i].RightPointer}")
 
 def FindNode(item):
     #start at the Root Pointer
@@ -92,8 +92,8 @@ def TraverseInOrder(TreeList, RootPointer):
 # Initialise tree
 Initialise()
 
-# Print nodes of Tree
-Display()
+# # Print nodes of Tree
+# Display()
 
 # ADD nodes on the tree
 AddNode('B')
