@@ -42,6 +42,22 @@ class LinkedList:
                 else:
                     self.startPtr = newNodePtr
  
+    def DeleteNode(self, newItem):
+        thisNodePtr = self.startPtr
+        while thisNodePtr != self.nullPtr and self.container[thisNodePtr].data != newItem:
+            prevNodePtr = thisNodePtr
+            thisNodePtr = self.container[thisNodePtr].pointer
+
+        if thisNodePtr != self.nullPtr:
+            if thisNodePtr == self.startPtr:
+                self.startPtr = self.container[self.startPtr].pointer
+            else:
+                self.container[prevNodePtr].pointer=self.container[thisNodePtr].pointer
+
+            self.container[thisNodePtr].pointer = self.freePtr
+            self.freePtr = thisNodePtr
+
+
     def displayStatus(self):
         i = self.startPtr
         print("Start Pointer: ", self.startPtr)
@@ -64,4 +80,13 @@ l1.insertNode("A")
 l1.insertNode("F")
 l1.insertNode("C")
  
+print("")
+print("====== Linked List after ADD Node ======")
+print("")
+l1.displayStatus()
+
+print("")
+print("====== Linked List after Delete Node ======")
+print("")
+l1.DeleteNode("F")
 l1.displayStatus()
